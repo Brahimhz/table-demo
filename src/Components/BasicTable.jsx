@@ -34,7 +34,7 @@ export default function BasicTable() {
     console.log(query);
 
     if (!query || query == "") setData(rows);
-    else setData(data.filter((d) => d.name.toLowerCase().includes(query)));
+    else setData(rows.filter((d) => d.name.toLowerCase().includes(query)));
 
   };
 
